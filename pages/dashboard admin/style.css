@@ -1,0 +1,21 @@
+.date_div {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 10px;
+    background-color: rgba(153, 205, 50, 0.628);
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: 2px 2px 2px 2px rgba(128, 128, 128, 0.63);
+}
+
+.address_div {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 10px;
+    background-color: rgba(153, 205, 50, 0.628);
+    padding: 10px;
+    border-radius: 5%;
+    box-shadow: -2px 2px 2px 2px rgba(128, 128, 128, 0.63);
+}

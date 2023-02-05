@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+    <script defer src="source.js" type="module"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../home/home.html">KitchGet</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../home/home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../cart/cart.html">Cart</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="" id="logout_btn">Logout</a>
+              </li>
+            </ul>
+<!--             <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+          </div>
+        </div>
+      </nav>
+
+      <h1>cart</h1>
+    <div class="container mt-3">
+        
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Image</th>
+            <th scope="col">Name</th>
+            <th scope="col">QTY</th>
+            <th scope="col">Unit Price</th>
+            <th scope="col">Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+<!--           <tr>
+            <th scope="row">1</th>
+            <td><img style="width: 10%;" src="https://cdn.shopify.com/s/files/1/0526/8075/3332/products/31vdoe4YWhL_540x.jpg"></td>
+            <td>Bannana</td>
+            <td>10</td>
+            <td>3.5</td>
+            <td>
+              <button class="btn btn-warning">➕</button>
+              <button class="btn btn-warning">➖</button>
+            </td>
+          </tr> -->
+        </tbody>
+      </table>
+      <hr>
+      <b id="result">
+        
+      </b>
+      <hr>
+      <button id="delete_cart_btn" class="btn btn-danger">Delete Cart</button>
+        <a class="btn btn-primary" href="../home/home.html">Go Back</a>
+
+    </div>
+
+</body>
+
+</html>

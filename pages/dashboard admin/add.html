@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"></script>
+  <script defer src="add_source.js" type="module"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../dashboard admin/dash.html">KitchGet</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../dashboard admin/dash.html">Dashboard</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./add.html">Add a product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="" id="logout_btn">Logout</a>
+          </li>
+        </ul>
+        <!--             <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form> -->
+      </div>
+    </div>
+  </nav>
+
+  <div class="container mt-3">
+    <h1>Add a product</h1>
+    <form id="add_product_form">
+      <div class="mb-3">
+        <label for="product_name" class="form-label">Product Name</label>
+        <input type="text" class="form-control" id="product_name">
+        <p id="product_name_msg"></p>
+      </div>
+      <div class="mb-3">
+        <label for="product_description" class="form-label">Product Description</label>
+        <input type="text" class="form-control" id="product_description">
+        <p id="product_description_msg"></p>
+      </div>
+      <div class="mb-3">
+        <label for="product_price" class="form-label">Product Price</label>
+        <input type="text" class="form-control" id="product_price">
+        <p id="product_price_msg"></p>
+      </div>
+
+      <div class="mb-3">
+        <label for="product_img" class="form-label">Product Image Link</label>
+        <input type="text" class="form-control" id="product_img">
+        <p id="product_img_msg"></p>
+      </div>
+      <button id="add_btn" type="submit" class="btn btn-primary">Add</button>
+      <p id="result"></p>
+    </form>
+  </div>
+  <div class="date_div">
+    <span id="date_data"></span>
+    <span id="time_data"></span>
+  </div>
+
+  <div class="address_div">
+    <span id="address"></span>
+  </div>
+</body>
+
+</html>
